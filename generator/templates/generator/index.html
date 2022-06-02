@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://lh3.googleusercontent.com/8QGCeP9jVTa8mAp0yYsGYnAMvR5liY-8OMm_9Cv8H9QWtXHwid9mDuTgwWtesD8mX2zQUueDE-A3Sn2mhpgb3Nj8t_5IWCWcd2nusHL3xNTLv_Vp7UgF9-1QAVxmDMwHBlzBGpDXlg=w2400">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Password generator</title>
+</head>
+
+<body style="background-color: gray">
+    <!-- Navbar made with bootstrap 5 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="/">Password generator</a> -->
+          <a class="navbar-brand" href="/">
+            <img src="https://lh3.googleusercontent.com/8QGCeP9jVTa8mAp0yYsGYnAMvR5liY-8OMm_9Cv8H9QWtXHwid9mDuTgwWtesD8mX2zQUueDE-A3Sn2mhpgb3Nj8t_5IWCWcd2nusHL3xNTLv_Vp7UgF9-1QAVxmDMwHBlzBGpDXlg=w2400" alt="Julian-Ruiz-logo" width="45" height="25" class="d-inline-block align-text-top">
+            Julian Ruiz
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">About</a>
+              </li>          
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--------------------------------->  
+
+    <!-- Container made with bootstrap 5 -->
+      <div class="col-md-4 offset-md-4 p-5 ">
+        <form action="password"  class="card card-body border-primary mb-3" style="background-color: white">
+            <h1>Password generator</h1>
+            <!--Select number of characters-->
+            <label for="lenght" >Select number of characters</label>  
+                <select name="lenght" id="lenght" class="form-control">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="uppercase">Add uppercase</label>
+                <input class="form-check-input"type="checkbox" name="uppercase" id="uppercase" checked/>
+            </div>
+            
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="special">Add special characters</label>
+                <input class="form-check-input"type="checkbox" name="special" id="special" checked/>
+            </div>   
+
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="numbers">Add numbers</label>
+                <input class="form-check-input" type="checkbox" name="numbers" id="numbers" checked/>
+            </div>
+
+            <button class="btn btn-outline-primary">Generate password</button>
+        </form>
+    </div>
+    <!--------------------------------------->
+</body>
+</html>
